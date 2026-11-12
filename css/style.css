@@ -1,0 +1,210 @@
+@charset "utf-8";
+/*-------------------------
+  共通スタイル
+-------------------------*/
+
+/*** 基本設定 ***/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/*** ヘッダー ***/
+header {
+    padding: 20px 5%;
+    background: #333;
+    color: #fff;
+    height: 80px;
+}
+
+header h1 {
+    margin:0 0 0 75px;
+    width: 40%;
+    float: left ;
+}
+nav{
+    width: 40%;
+    float: right;
+    margin-top: 10px;
+}
+nav a {
+    margin-right: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: aqua;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+/*** フッター ***/
+footer {
+    padding: 4px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/*-------------------------
+  HOME
+-------------------------*/
+
+/*** メインビジュアル ***/
+#home .main-visual {
+    position: relative;
+    text-align: center;
+}
+
+#home .main-visual img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#home .main-visual h2 {
+    margin-top: 20px;
+}
+
+/*** コンテンツ ***/
+#home .contents {
+    margin-top: 40px;
+    padding: 30px;
+    background: #f0f0f0;
+}
+.aboutus{
+    margin-top: 40px;
+    padding: 30px;
+    background: #f0f0f0;
+}
+
+/*-------------------------
+  下層ページ共通
+-------------------------*/
+
+/*** 基本設定 ***/
+.lower {
+    background: #f5f5f5;
+}
+
+/*** ページ見出し ***/
+.lower .page-heading {
+    padding: 30px;
+    background: #dce8ed;
+}
+
+/*** 2カラムレイアウト ***/
+.lower .layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.lower article {
+    flex: 1;
+}
+
+.lower article section {
+    margin-bottom: 20px;
+    padding: 25px;
+    background: #fff;
+}
+
+.lower article section:last-of-type {
+    margin-bottom: 0;
+}
+
+.lower aside {
+    width: 200px;
+    padding: 20px;
+    background: #e5e5e5;
+}
+.contact h2{
+    text-align: center;
+}
+.contact p{
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 60px !important;
+  background-color: #fff;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #166ab5;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #166ab5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #12538f;
+}
+/*-------------------------
+  PAGE 01
+-------------------------*/
+
+/*** ページ固有のスタイル ***/
+#page01 .page-heading h2 {
+    color: #236b83;
+}
+
+aside ul li:hover a {
+    color: black;
+}
